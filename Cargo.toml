@@ -10,4 +10,5 @@ rust-crypto = "0.2"
 itertools = "0.7"
 hex = "0.3"
 rayon = "1"
-packed_simd = { version = "0.1", features = ["into_bits"] }
+cfg-if = "0.1.6"
+packed_simd = { version = "0.3.3", features = ["into_bits"] }
