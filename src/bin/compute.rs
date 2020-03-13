@@ -12,7 +12,7 @@ fn main() {
     let stdin = io::stdin();
     let handle = stdin.lock();
     let count = 1024;
-    let iterations = (1 << 25) / count;
+    let iterations = (1 << 42) / count;
     let mut seed = decode_hex(handle.lines().next().unwrap());
     println!("{}", hex::encode(&seed));
     for _ in 0..count {
